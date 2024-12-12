@@ -1,0 +1,84 @@
+/* Write your desired CSS here */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(to right ,red,yellow,green);
+}
+.container{
+    width: 500px;
+    margin: 100px auto;
+    box-shadow: 5px 5px 30px  black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+    padding: 10px 30px;
+}
+.crypto-info{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+#crypto-select{
+    height: 40px;
+    width: 220px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+}
+
+#crypto-price{
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+.alert-setup{
+    height: 120px;
+    width: 100%;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#alert-price{
+    height: 40px;
+    font-size: 16px;  
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+}
+#crypto-select,#alert-price:focus{
+    outline: none;
+}
+
+#alert-message{
+    background-color: red;
+    font-size: 18px;
+    height: 50px;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width:600px){
+    .container{
+        width:330px;
+        height:400px;
+
+    }
+    .crypto-info{
+        height: 100px;
+        margin: 5px;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    #crypto-select{
+        width: 100%;
+    }
+}
